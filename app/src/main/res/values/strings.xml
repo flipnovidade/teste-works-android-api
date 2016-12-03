@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Teste</string>
+    <string name="config_activity">Configuração</string>
+    <string name="registro_activity">Registrar chassis</string>
+
+    <string name="recebendo_informacoes">Recebendo informações</string>
+
+    <string name="ligar_bluetooh_title">Ligar Bluetooth</string>
+    <string name="ligar_bluetooh_msg">Para o aplicativo funcionar corretamente, é necessário que o seu Bluetooth esteja ligado. Por favor, ligue o Bluetooth e tente novamente.</string>
+    <string name="problema_conexao">Problemas na conexão</string>
+    <string name="problema_conexao_odb_nao_sincronizado">Não foi possível sincronizar com o dispositivo OBDII. Por favor, certifique-se de que o veículo esteja ligado e tente novamente ou selecione um dispositivo diferente. Caso o problema persista, reporte o seu problema para a nossa equipe.</string>
+    <string name="problema_conexao_odb_nao_conecta">Não foi possível conectar com o dispositivo OBDII. Por favor, tente novamente ou selecione um dispositivo diferente. Caso o problema persista, reporte o seu problema a nossa equipe.</string>
+    <string name="tentar_novamente">Tentar novamente</string>
+    <string name="selecionar_dispositivo">Selecionar dispositivo</string>
+    <string name="ok">OK</string>
+    <string name="preparando_bluetooth">Preparando…</string>
+    <string name="buscando_dispositivos">Buscando dispositivos…</string>
+    <string name="conectando_bluetooth">Conectando…</string>
+    <string name="configurando_obd">Configurando…</string>
+    <string name="positivo">Positivo</string>
+    <string name="negativo">Negativo</string>
+    <string name="neutro">Neutro</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="error_required_field">Campo obrigatório</string>
+    <string name="error_incorrect_format">Placa incorreta</string>
+
+    <!--ROBOTO-->
+    <string name="roboto_regular">Roboto-Regular.ttf</string>
+    <string name="roboto_light">Roboto-Light.ttf</string>
+    <string name="roboto_medium">Roboto-Medium.ttf</string>
+    <string name="roboto_bold">Roboto-Bold.ttf</string>
+    <string name="text_check_ox_show_email">Preencher automaticamente</string>
+
+    <string name="title_registro_empty_view">Nenhum registro</string>
+    <string name="subtitle_registro_empty_view">Toque no botão + para fazer um registro</string>
+</resources>

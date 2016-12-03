@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cinza">#AAAAAA</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza_ajuda">#686868</color>
+
+    <color name="cinza_claro">#2C2E32</color>
+    <color name="cinza_selecao">#1E2022</color>
+    <color name="cinza_label">#B3B3B3</color>
+
+    <color name="amarelo_dourado">#EBB000</color>
+    <color name="cinza_azulado">#383b40</color>
+    <color name="card_background">#22282e</color>
+    <color name="preto">#000000</color>
+    <color name="cinza_fonte">#272c30</color>
+    <color name="amarelo_claro">#fbd652</color>
+    <color name="amarelo_pastel">#fde673</color>
+    <color name="cinza_divisor">#ebebeb</color>
+
+    <color name="fundo_app">#1e2328</color>
+    <color name="vinho">#3b0000</color>
+    <color name="cinza_barra">#cccccc</color>
+    <color name="cinza_hodometro">#C2C2C2</color>
+    <color name="cinza_hint">#808080</color>
+    <color name="cinza_claro_fonte">#b3b3b3</color>
+    <color name="cinza_escuro_fonte">#3b444d</color>
+    <color name="verde_fonte">#76a100</color>
+    <color name="vermelho_fonte">#d13111</color>
+
+    <color name="cinza_divisor_dark">#2a3036</color>
+    <color name="verde_progress">#25a85c</color>
+    <color name="cinza_background_progress">#272c30</color>
+    <color name="vermelho_barra">#ff3c2d</color>
+    <color name="verde_barra">#a7e401</color>
+    <color name="amarelo_barra">#f7cd25</color>
+    <color name="azul_barra">#009ee8</color>
+
+    <color name="toolbar_background">#25292e</color>
+
+    <color name="botoes_transparentes">#069688</color>
+    <color name="vermelho_snackbar">#D2320F</color>
+    <color name="amarelo_fonte_dark">#ecb306</color>
+
+    <color name="apresentacao_rodape">#101316</color>
+    <color name="background_dispositivo">#f0f0f0</color>
+    <color name="tint_icone">#2E343B</color>
+    <color name="verde_botao_with_transparent">#FA4C9338</color>
+
+    <!-- DIVIDER -->
+    <color name="gray_divider">#686868</color>
+
+    <color name="cinza_escuro_fontes">#686868</color>
+
+    <color name="colorFAB">#FF9800</color>
+</resources>
