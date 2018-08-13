@@ -52,4 +52,6 @@
     <color name="cinza_escuro_fontes">#686868</color>
 
     <color name="colorFAB">#FF9800</color>
+
+    <color name="dark_grey">#242a2c</color>
 </resources>

@@ -24,4 +24,21 @@
     <dimen name="fab_margin_bottom">1dp</dimen>
     <dimen name="appwidget_padding">8dp</dimen>
 
+
+    <dimen name="android_space_1">4dp</dimen>
+    <dimen name="android_space_2">8dp</dimen>
+    <dimen name="space_fifteen">15dp</dimen>
+    <dimen name="android_space_3">16dp</dimen>
+    <dimen name="android_space_4">24dp</dimen>
+    <dimen name="android_space_5">32dp</dimen>
+    <dimen name="android_space_6">12dp</dimen>
+    <dimen name="text_size_1">10sp</dimen>
+    <dimen name="text_size_2">12sp</dimen>
+    <dimen name="text_size_3">14sp</dimen>
+    <dimen name="text_size_4">16sp</dimen>
+    <dimen name="text_size_5">18sp</dimen>
+    <dimen name="text_size_6">20sp</dimen>
+    <dimen name="text_size_7">26sp</dimen>
+    <dimen name="text_size_8">30sp</dimen>
+
 </resources>

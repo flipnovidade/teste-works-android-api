@@ -34,7 +34,8 @@ public class AppConstant {
         public static final String Token = "703f7e74ffa8da0839e23c970433018dad0436afff662357d842537cf2a86ca8";
         public static final String Account = "felippesantos";
         public static final String AccountAnother = "Creativedash";
-        public static final String URL = "https://api.dribbble.com/v1/users/felippesantos/";
+        public static final String URL = "https://api.dribbble.com/";
+        public static final String PER_PAGE = "30";
     }
 
 }

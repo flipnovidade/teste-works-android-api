@@ -6,7 +6,9 @@ import com.google.gson.internal.bind.DateTypeAdapter;
 
 import java.io.File;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
+import br.com.teste.call.AppConstant;
 import br.com.teste.call.AppDelegate;
 import okhttp3.Cache;
 import okhttp3.OkHttpClient;
@@ -15,6 +17,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiModule {
+    private static final int timeout = 120;
 
     public Gson providesGson() {
 
@@ -28,14 +31,21 @@ public class ApiModule {
         long SIZE_OF_CACHE = 10 * 1024 * 1024; // 10 MiB
         Cache c = new Cache(new File(AppDelegate.getInstance().getApplicationContext().getCacheDir(), "http"), SIZE_OF_CACHE);
 
-        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        OkHttpClient client = new OkHttpClient.Builder().cache(c).addInterceptor(interceptor).addNetworkInterceptor(new CachingControlInterceptor()).build();
+        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+
+        OkHttpClient client = new OkHttpClient.Builder()
+                //.cache(c)
+                .connectTimeout(timeout, TimeUnit.SECONDS)
+                .readTimeout(timeout, TimeUnit.SECONDS)
+                .addInterceptor(logging)
+                .writeTimeout(timeout, TimeUnit.SECONDS)
+//                .addNetworkInterceptor(new CachingControlInterceptor())
+                .build();
 
         return new Retrofit.Builder()
-                //.baseUrl("http://api.mycubomob.com.br/v1")
-                .baseUrl( "https://api.dribbble.com/" )
-                .addConverterFactory(GsonConverterFactory.create())
+                .baseUrl(AppConstant.Dribbble.URL)
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(client)
                 .build();
     }

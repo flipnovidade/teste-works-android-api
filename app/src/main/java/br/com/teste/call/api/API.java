@@ -7,12 +7,12 @@ import br.com.teste.call.model.Shots;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
+import rx.Observable;
 
 public interface API {
 
-    //@GET("/posts")
-    @GET("/v1/users/"+ AppConstant.Dribbble.AccountAnother +"/shots")
-    Call<List<Shots>> sendRegister(
+    @GET("/v2/users/"+ AppConstant.Dribbble.AccountAnother +"/shots/")
+    Observable<List<Shots>> getShots(
             @Query("access_token") String access_token,
             @Query("page") String page,
             @Query("per_page") String perPage

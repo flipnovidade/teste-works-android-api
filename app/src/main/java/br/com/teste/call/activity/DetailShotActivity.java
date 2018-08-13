@@ -20,8 +20,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
 import br.com.teste.call.R;
 import br.com.teste.call.model.Shots;
 import br.com.teste.call.utils.ActivityUtils;
@@ -87,7 +85,7 @@ public class DetailShotActivity extends AppCompatActivity{
         llSliderGalery.setVisibility(View.GONE);
 
 		if(news.getTeam() != null){
-			Picasso.with(DetailShotActivity.this).load( news.getTeam().getUrlAvatar()).into(imageView);
+			// TODO set image
 		}else{
 			imageView.setVisibility(View.GONE);
 		}

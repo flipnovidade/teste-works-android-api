@@ -22,28 +22,28 @@ public class CallApi {
 
     public void callApi(String token, String page, String perPage){
 
-        Call<List<Shots>> objectCall = ApiModule.service().sendRegister(token, page, perPage);
-        objectCall.enqueue(new Callback<List<Shots>>() {
-            @Override
-            public void onResponse(Call<List<Shots>> call, Response<List<Shots>> response) {
-                if( response.code() == 200){
-
-                        if(response.body() != null && response.body().size() > 0 ){
-                            callOnListener.ResponseOK((List<Shots>) response.body());
-                        }else{
-                            callOnListener.ResponseFail();
-                        }
-
-                }else{
-                    callOnListener.ResponseFail();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Shots>> call, Throwable t) {
-                callOnListener.ResponseFail();
-            }
-        });
+//        Call<List<Shots>> objectCall = ApiModule.service().getShots(token, page, perPage);
+//        objectCall.enqueue(new Callback<List<Shots>>() {
+//            @Override
+//            public void onResponse(Call<List<Shots>> call, Response<List<Shots>> response) {
+//                if( response.code() == 200){
+//
+//                        if(response.body() != null && response.body().size() > 0 ){
+//                            callOnListener.ResponseOK((List<Shots>) response.body());
+//                        }else{
+//                            callOnListener.ResponseFail();
+//                        }
+//
+//                }else{
+//                    callOnListener.ResponseFail();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<Shots>> call, Throwable t) {
+//                callOnListener.ResponseFail();
+//            }
+//        });
 
 
     }

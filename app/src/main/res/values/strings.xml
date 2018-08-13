@@ -34,4 +34,11 @@
 
     <string name="title_registro_empty_view">Nenhum registro</string>
     <string name="subtitle_registro_empty_view">Toque no botão + para fazer um registro</string>
+
+
+
+
+
+
+    <string name="title_fragment_explorer">Lista de Shots</string>
 </resources>

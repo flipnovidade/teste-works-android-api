@@ -10,9 +10,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.squareup.picasso.Callback;
-import com.squareup.picasso.Picasso;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -112,17 +109,6 @@ public class ListaRegisterRecyclerViewAdapter extends RecyclerView.Adapter<Lista
         holder.txvLinhaUmDireita.setVisibility(View.GONE);
 
         if(ha.getTeam() != null){
-            Picasso.with( context ).load( ha.getImages().getNormal() ).into(holder.imgavatar, new Callback() {
-                @Override
-                public void onSuccess() {
-                    holder.myProgress.setVisibility(View.GONE);
-                }
-
-                @Override
-                public void onError() {
-
-                }
-            });
         }
 
 
