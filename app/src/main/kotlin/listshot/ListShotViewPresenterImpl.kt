@@ -5,9 +5,7 @@ import br.com.teste.call.utils.RxComposer
 import rx.Subscription
 import timber.log.Timber
 
-class ListShotViewPresenterImpl(private val view: ListShotView,
-                                private val apiInteractor: ApiInteractor): ListShotViewPresenter {
-
+class ListShotViewPresenterImpl(private val view: ListShotView, private val apiInteractor: ApiInteractor): ListShotViewPresenter {
     private var subscription: Subscription? = null
 
     override fun onCreate(nPage: Int) {

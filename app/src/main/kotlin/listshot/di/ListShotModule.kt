@@ -16,8 +16,8 @@ class ListShotModule(private val view: ListShotView){
     }
 
     @Provides
-    fun provideListShotPresenter(view: ListShotView, apiInteractor: ApiInteractor): ListShotViewPresenter {
-        return ListShotViewPresenterImpl(view, apiInteractor)
+    fun provideListShotPresenter(view: ListShotView): ListShotViewPresenter {
+        return ListShotViewPresenterImpl(view)
     }
 
 }

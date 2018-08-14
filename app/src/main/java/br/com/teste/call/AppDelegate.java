@@ -25,7 +25,7 @@ public class AppDelegate extends Application {
 
     protected void initComponent() {
         if (component == null) {
-            component = DaggerAppDelegateComponent.builder().appModule(new AppModule(this)).build();
+            component = DaggerAppDelegateComponent.builder().appModule(new AppModule(appDelegate)).build();
         }
         component.inject(this);
     }
