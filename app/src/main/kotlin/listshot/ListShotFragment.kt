@@ -9,6 +9,7 @@ import br.com.teste.call.AppDelegate
 import br.com.teste.call.R
 import br.com.teste.call.model.Shots
 import kotlinx.android.synthetic.main.fragment_list_shots.*
+import listshot.di.DaggerListShotComponent
 import listshot.di.ListShotModule
 import javax.inject.Inject
 

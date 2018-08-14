@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import br.com.teste.call.AppDelegate
 import br.com.teste.call.R
 import br.com.teste.call.model.Shots
+import detailshot.di.DaggerDetailCompoment
 import detailshot.di.DetailModule
 import listshot.ListShotFragment
 import listshot.di.ListShotModule

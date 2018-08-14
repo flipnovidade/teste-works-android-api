@@ -1,14 +1,15 @@
-package di
+package di.component.common
 
 import android.content.Context
 import api.ApiInteractor
 import br.com.teste.call.AppDelegate
-import br.com.teste.call.api.ApiModule
+import br.com.teste.call.di.module.common.AppModule
+import br.com.teste.call.di.module.common.InteractorModule
 import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = arrayOf(ApiModule::class))
+@Component(modules = [(AppModule::class), (InteractorModule::class)])
 interface AppComponent {
 
     fun inject(app: AppDelegate)

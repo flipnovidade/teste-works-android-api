@@ -1,4 +1,4 @@
-package br.com.teste.call.di;
+package br.com.teste.call.di.scope;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

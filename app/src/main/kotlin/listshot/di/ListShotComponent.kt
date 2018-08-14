@@ -1,8 +1,8 @@
 package listshot.di
 
-import br.com.teste.call.di.FragmentScope
+import br.com.teste.call.di.scope.FragmentScope
 import dagger.Component
-import di.AppComponent
+import di.component.common.AppComponent
 import listshot.ListShotFragment
 
 @FragmentScope

@@ -1,9 +1,9 @@
 package detailshot.di
 
-import br.com.teste.call.di.FragmentScope
+import br.com.teste.call.di.scope.FragmentScope
 import dagger.Component
 import detailshot.DetailFragment
-import di.AppComponent
+import di.component.common.AppComponent
 
 @FragmentScope
 @Component(dependencies = arrayOf(AppComponent::class), modules = arrayOf(DetailModule::class))

@@ -8,8 +8,12 @@ import java.io.File;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import javax.inject.Singleton;
+
 import br.com.teste.call.AppConstant;
 import br.com.teste.call.AppDelegate;
+import dagger.Module;
+import dagger.Provides;
 import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -25,6 +29,7 @@ public class ApiModule {
                 .registerTypeAdapter(Date.class, new DateTypeAdapter())
                 .create();
     }
+
 
     public Retrofit providesRestAdapter(Gson gson) {
 
